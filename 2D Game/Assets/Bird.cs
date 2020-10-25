@@ -39,7 +39,7 @@ public class Bird : MonoBehaviour
         // GetComponent<SpriteRenderer>().color = Color.white;
         _userIsDragging = false;
         Vector2 directionToInitialPosition = _initialPosition - transform.position;
-        GetComponent<Rigidbody2D>().AddForce(directionToInitialPosition * 100);
+        GetComponent<Rigidbody2D>().AddForce(directionToInitialPosition * 200);
         GetComponent<Rigidbody2D>().gravityScale = 1;
     }
 
